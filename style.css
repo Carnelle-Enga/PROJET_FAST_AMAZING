@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    /* position: absolute; */
+    transform: translate(-50%,-50%);
+    /* width: 50%; */
+}
+
+ul{
+    display: flex;
+    padding-right: 15px;
+}
+li{
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    padding:16px 34px;
+    margin: 4px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.9s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: #333;
+}
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 165, 0);
+    z-index: -1;
+    transform: scale(0.3);
+    transition: 0.9s;
+    visibility: hidden;
+
+}
+a:hover{
+    color: #fff;
+}
+a:hover::before{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.bienvenu{
+  background-color: red;
+    
+}
